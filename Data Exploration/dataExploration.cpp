@@ -52,30 +52,23 @@ double covar(vector<double> r, vector<double> m){
     return  sum/(r.size()-1);
 }
 
-double cor(vector<double> X, vector<double> Y){
-    double n = X.size();
+double cor(vector<double> r, vector<double> m){
+    double s = r.size();
 
-    int sum_X = 0, sum_Y = 0, sum_XY = 0;
-    int squareSum_X = 0, squareSum_Y = 0;
+    int sum_r = 0, sum_m = 0, sum_rm = 0;
+    int squareSum_r = 0, squareSum_m = 0;
   
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < s; i++)
     {
-        // sum of elements of array X.
-        sum_X = sum_X + X[i];
-  
-        // sum of elements of array Y.
-        sum_Y = sum_Y + Y[i];
-  
-        // sum of X[i] * Y[i].
-        sum_XY = sum_XY + X[i] * Y[i];
-  
-        // sum of square of array elements.
-        squareSum_X = squareSum_X + X[i] * X[i];
-        squareSum_Y = squareSum_Y + Y[i] * Y[i];
+        sum_r = sum_r + r[i];
+        sum_m = sum_m + m[i];
+        sum_rm = sum_rm + r[i] * m[i];
+
+        squareSum_r = squareSum_r + r[i] * r[i];
+        squareSum_m = squareSum_m + m[i] * m[i];
     }
   
-    // use formula for calculating correlation coefficient.
-    double corr = (double)(n * sum_XY - sum_X * sum_Y) / sqrt((n * squareSum_X - sum_X * sum_X) * (n * squareSum_Y - sum_Y * sum_Y));
+    double corr = (double)(s * sum_rm - sum_r * sum_m) / sqrt((s * squareSum_r - sum_r * sum_r) * (s * squareSum_m - sum_m * sum_m));
   
     cout.precision(2);
     return corr;
