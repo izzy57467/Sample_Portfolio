@@ -9,6 +9,8 @@ using namespace std;
 
 double sum(vector<double> v){
     double s;
+
+    // Adding each element in the vector to s
     for(int x = 0;x < v.size();x++){
         s+= v[x];
     }
@@ -17,39 +19,52 @@ double sum(vector<double> v){
 }
 
 double mean(vector<double> v){
+    // Using the sum function and diving it by the total 
+    // amount of elements in order to get the average
     double m = sum(v)/v.size();
     return m;
 }
 
 double median(vector<double> v){
+    // Sorting the vector from lowest to highest
     sort(v.begin(), v.end());
     int size = v.size();
-    if(size % 2 == 0){
+
+    // If the amount of elements in the vector is odd
+    // then the middle is taken out and returned as the median
+    if(size % 2 == 1){
         return v[size/2];
     }
+    // The two middle elements are taken out, added together, and divided to 
+    // return median
     else{
         return ((v[size/2] + v[(size/2)+1])/2);
     }
 }
 
 void range(vector<double> v){
+    // sorting vector to get first and last element
     sort(v.begin(), v.end());
     //vector<reference_wrapper<double>> arr{v.at(0), v.at(v.size()-1)};
     cout.precision(3);
+
+    // printing out the first and last element
     cout << v[0] << "-" << v[v.size()-1] << endl;
 
 }
 
 double covar(vector<double> r, vector<double> m){
+    double s = r.size();
+
     double sum = 0;
     double meanR = mean(r);
     double meanM = mean(m);
 
-    for(int x = 0;x<r.size();x++){
+    for(int x = 0;x<s;x++){
         sum += (r[x]-meanR) * (m[x]-meanM); 
     }
     
-    return  sum/(r.size()-1);
+    return  sum/(s-1);
 }
 
 double cor(vector<double> r, vector<double> m){
