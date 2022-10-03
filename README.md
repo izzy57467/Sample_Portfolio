@@ -10,3 +10,6 @@ Intro to Machine Learning 2022 Fall
 ## Data Exploration
 
 [Data Exploration Files](https://github.com/izzy57467/Sample_Portfolio/tree/main/Data%20Exploration)
+
+## Linear Models
+[Linear Model Files](https://github.com/izzy57467/Sample_Portfolio/tree/main/Linear%20Models)
