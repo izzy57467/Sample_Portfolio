@@ -13,3 +13,6 @@ Intro to Machine Learning 2022 Fall
 
 ## Linear Models
 [Linear Model Files](https://github.com/izzy57467/Sample_Portfolio/tree/main/Linear%20Models)
+
+## Machine Learning from Scratch
+[Machine Learning from Scratch Files](https://github.com/izzy57467/Sample_Portfolio/tree/main/Machine_Learning_From_Scratch)
