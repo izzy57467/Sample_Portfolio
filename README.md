@@ -18,4 +18,4 @@ Intro to Machine Learning 2022 Fall
 [Machine Learning from Scratch Files](https://github.com/izzy57467/Sample_Portfolio/tree/main/Machine_Learning_From_Scratch)
 
 ## Searching for Similarities
-[Searching For Similarities](https://github.com/izzy57467/Sample_Portfolio/tree/main/Searching_for_Similarity)
+[Searching For Similarity Files](https://github.com/izzy57467/Sample_Portfolio/tree/main/Searching_for_Similarity)
