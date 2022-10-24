@@ -19,3 +19,6 @@ Intro to Machine Learning 2022 Fall
 
 ## Searching for Similarities
 [Searching For Similarity Files](https://github.com/izzy57467/Sample_Portfolio/tree/main/Searching_for_Similarity)
+
+## Kernel & Ensemble Methods
+[Kernel & Ensemble Methods]()
