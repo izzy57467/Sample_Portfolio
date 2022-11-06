@@ -22,3 +22,6 @@ Intro to Machine Learning 2022 Fall
 
 ## Kernel & Ensemble Methods
 [Kernel & Ensemble Methods](https://github.com/izzy57467/Sample_Portfolio/tree/main/Kernel%20and%20Ensemble%20Methods)
+
+## ML with sklearn
+[ML with sklearn](https://github.com/izzy57467/Sample_Portfolio/tree/main/ML%20with%20sklearn)
